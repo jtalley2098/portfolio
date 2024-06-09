@@ -23,47 +23,10 @@ header{
 
 }
 .nav-links {
-    display: none; /* Initially hide the navigation links */
+    display: flex; /* Initially hide the navigation links */
   }
-  .nav-links.show{
-    display: block;
-  }
-  .nav-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
+  
 
-.nav-toggle-icon {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #333;
-    position: absolute;
-  }
-  .nav-toggle-icon::before,
-.nav-toggle-icon::after {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #333;
-  
-  left: 0;
-}
-.nav-toggle-icon::before {
-    top: -6px;
-  }
-  
-  .nav-toggle-icon::after {
-    top: 6px;
-  }
-  
-  /* Show navigation links when the toggle is active */
-  .nav-toggle.active + .nav-links {
-    display: block;
-  }
 .profile{
     
     display: flex;
