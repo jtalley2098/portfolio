@@ -1,0 +1,74 @@
+body{
+   background-color: #e6e6e6;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    /*grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-areas: "logo nav nav profile";*/
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid blue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.logo{
+   
+   
+    display: flex;
+    width: 100px;
+    border: solid blue 1px;
+
+}
+.nav-links {
+    display: none; /* Initially hide the navigation links */
+  }
+  .nav-links.show{
+    display: block;
+  }
+  .nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+.nav-toggle-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+  }
+  .nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  
+  left: 0;
+}
+.nav-toggle-icon::before {
+    top: -6px;
+  }
+  
+  .nav-toggle-icon::after {
+    top: 6px;
+  }
+  
+  /* Show navigation links when the toggle is active */
+  .nav-toggle.active + .nav-links {
+    display: block;
+  }
+.profile{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: solid blue 1px;
+    margin-left: auto;
+}
