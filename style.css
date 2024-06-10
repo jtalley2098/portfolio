@@ -6,7 +6,7 @@ header{
     display: flex;
     /*grid-template-columns: 1fr 1fr 1fr auto;
     grid-template-areas: "logo nav nav profile";*/
-    background-color: white;
+    background-color: none;
     color: black;
     padding: 10px;
     border-bottom: 1px solid blue;
@@ -24,11 +24,15 @@ header{
 }
 .nav-links {
     display: flex; /* Initially hide the navigation links */
+    gap: 20%;
+    font-size: 1.5rem;
+    list-style: none;
   }
   
 
 .profile{
-    
+    margin-left: 80%;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
